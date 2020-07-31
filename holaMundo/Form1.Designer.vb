@@ -35,6 +35,7 @@ Partial Class Form1
         Me.optPorcentaje = New System.Windows.Forms.RadioButton()
         Me.optExponenciacion = New System.Windows.Forms.RadioButton()
         Me.optResiduo = New System.Windows.Forms.RadioButton()
+        Me.cboOperaciones = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'lblnum1
@@ -162,11 +163,22 @@ Partial Class Form1
         Me.optResiduo.Text = "Residuo"
         Me.optResiduo.UseVisualStyleBackColor = True
         '
+        'cboOperaciones
+        '
+        Me.cboOperaciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboOperaciones.FormattingEnabled = True
+        Me.cboOperaciones.Items.AddRange(New Object() {"Seleccione una opcion", "Sumar", "Restar", "Multiplciar", "Dividir"})
+        Me.cboOperaciones.Location = New System.Drawing.Point(293, 157)
+        Me.cboOperaciones.Name = "cboOperaciones"
+        Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
+        Me.cboOperaciones.TabIndex = 13
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(464, 262)
+        Me.Controls.Add(Me.cboOperaciones)
         Me.Controls.Add(Me.optResiduo)
         Me.Controls.Add(Me.optExponenciacion)
         Me.Controls.Add(Me.optPorcentaje)
@@ -203,4 +215,5 @@ Partial Class Form1
     Friend WithEvents optPorcentaje As RadioButton
     Friend WithEvents optExponenciacion As RadioButton
     Friend WithEvents optResiduo As RadioButton
+    Friend WithEvents cboOperaciones As ComboBox
 End Class
