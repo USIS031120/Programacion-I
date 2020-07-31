@@ -34,7 +34,7 @@ Partial Class Form1
         Me.optDividir = New System.Windows.Forms.RadioButton()
         Me.optPorcentaje = New System.Windows.Forms.RadioButton()
         Me.optExponenciacion = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.optResiduo = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'lblnum1
@@ -152,22 +152,22 @@ Partial Class Form1
         Me.optExponenciacion.Text = "^"
         Me.optExponenciacion.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'optResiduo
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(162, 157)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(64, 17)
-        Me.RadioButton3.TabIndex = 12
-        Me.RadioButton3.Text = "Residuo"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.optResiduo.AutoSize = True
+        Me.optResiduo.Location = New System.Drawing.Point(162, 157)
+        Me.optResiduo.Name = "optResiduo"
+        Me.optResiduo.Size = New System.Drawing.Size(64, 17)
+        Me.optResiduo.TabIndex = 12
+        Me.optResiduo.Text = "Residuo"
+        Me.optResiduo.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(464, 262)
-        Me.Controls.Add(Me.RadioButton3)
+        Me.Controls.Add(Me.optResiduo)
         Me.Controls.Add(Me.optExponenciacion)
         Me.Controls.Add(Me.optPorcentaje)
         Me.Controls.Add(Me.optDividir)
@@ -202,5 +202,5 @@ Partial Class Form1
     Friend WithEvents optDividir As RadioButton
     Friend WithEvents optPorcentaje As RadioButton
     Friend WithEvents optExponenciacion As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents optResiduo As RadioButton
 End Class

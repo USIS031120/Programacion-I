@@ -23,11 +23,15 @@
         End If
 
         If optPorcentaje.Checked Then
-            'Realizar el proceso de porcentaje....
+            lblrespuesta.Text = (num1 * num2) / 100
         End If
+
         If optExponenciacion.Checked Then
-            'Realizar el proceso de exponenciacion....
+            lblrespuesta.Text = num1 ^ num2
         End If
-        '...
+
+        If optResiduo.Checked Then
+            lblrespuesta.Text = num1 Mod num2
+        End If
     End Sub
 End Class
