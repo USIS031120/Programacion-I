@@ -33,3 +33,15 @@ C:\Users\elmag\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.vbproj.
 C:\Users\elmag\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.exe
 C:\Users\elmag\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.xml
 C:\Users\elmag\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.pdb
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\bin\Debug\holaMundo.exe.config
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\bin\Debug\holaMundo.exe
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\bin\Debug\holaMundo.pdb
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\bin\Debug\holaMundo.xml
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.vbprojAssemblyReference.cache
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.Form1.resources
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.Resources.resources
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.vbproj.GenerateResource.cache
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.vbproj.CoreCompileInputs.cache
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.exe
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.xml
+C:\Users\mago\Source\Repos\Programacion-I\holaMundo\obj\Debug\holaMundo.pdb
