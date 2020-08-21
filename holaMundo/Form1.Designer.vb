@@ -31,6 +31,16 @@ Partial Class Form1
         Me.lblRespuestaVarianza = New System.Windows.Forms.Label()
         Me.lblRespuestaDesvTipica = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.grdEstadistica = New System.Windows.Forms.DataGridView()
+        Me.lbltotalf1 = New System.Windows.Forms.Label()
+        Me.lblTotalx1xf1 = New System.Windows.Forms.Label()
+        Me.lblTotalx2xf1 = New System.Windows.Forms.Label()
+        Me.x1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.f1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.n1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.x1xf1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.x2xf1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.grdEstadistica, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtserie
@@ -113,11 +123,77 @@ Partial Class Form1
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Desv. Tipica:"
         '
+        'grdEstadistica
+        '
+        Me.grdEstadistica.AllowUserToDeleteRows = False
+        Me.grdEstadistica.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grdEstadistica.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.x1, Me.f1, Me.n1, Me.x1xf1, Me.x2xf1})
+        Me.grdEstadistica.Location = New System.Drawing.Point(305, 28)
+        Me.grdEstadistica.Name = "grdEstadistica"
+        Me.grdEstadistica.Size = New System.Drawing.Size(423, 345)
+        Me.grdEstadistica.TabIndex = 14
+        '
+        'lbltotalf1
+        '
+        Me.lbltotalf1.AutoSize = True
+        Me.lbltotalf1.Location = New System.Drawing.Point(401, 376)
+        Me.lbltotalf1.Name = "lbltotalf1"
+        Me.lbltotalf1.Size = New System.Drawing.Size(22, 13)
+        Me.lbltotalf1.TabIndex = 15
+        Me.lbltotalf1.Text = "0.0"
+        '
+        'lblTotalx1xf1
+        '
+        Me.lblTotalx1xf1.AutoSize = True
+        Me.lblTotalx1xf1.Location = New System.Drawing.Point(537, 376)
+        Me.lblTotalx1xf1.Name = "lblTotalx1xf1"
+        Me.lblTotalx1xf1.Size = New System.Drawing.Size(22, 13)
+        Me.lblTotalx1xf1.TabIndex = 16
+        Me.lblTotalx1xf1.Text = "0.0"
+        '
+        'lblTotalx2xf1
+        '
+        Me.lblTotalx2xf1.AutoSize = True
+        Me.lblTotalx2xf1.Location = New System.Drawing.Point(658, 376)
+        Me.lblTotalx2xf1.Name = "lblTotalx2xf1"
+        Me.lblTotalx2xf1.Size = New System.Drawing.Size(22, 13)
+        Me.lblTotalx2xf1.TabIndex = 17
+        Me.lblTotalx2xf1.Text = "0.0"
+        '
+        'x1
+        '
+        Me.x1.HeaderText = "X1"
+        Me.x1.Name = "x1"
+        '
+        'f1
+        '
+        Me.f1.HeaderText = "F1"
+        Me.f1.Name = "f1"
+        '
+        'n1
+        '
+        Me.n1.HeaderText = "N1"
+        Me.n1.Name = "n1"
+        '
+        'x1xf1
+        '
+        Me.x1xf1.HeaderText = "X1 x F1"
+        Me.x1xf1.Name = "x1xf1"
+        '
+        'x2xf1
+        '
+        Me.x2xf1.HeaderText = "X2 x F1"
+        Me.x2xf1.Name = "x2xf1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(311, 254)
+        Me.ClientSize = New System.Drawing.Size(761, 400)
+        Me.Controls.Add(Me.lblTotalx2xf1)
+        Me.Controls.Add(Me.lblTotalx1xf1)
+        Me.Controls.Add(Me.lbltotalf1)
+        Me.Controls.Add(Me.grdEstadistica)
         Me.Controls.Add(Me.lblRespuestaDesvTipica)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.lblRespuestaVarianza)
@@ -132,6 +208,7 @@ Partial Class Form1
         Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.Text = "Calculadora Basica"
+        CType(Me.grdEstadistica, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -145,4 +222,13 @@ Partial Class Form1
     Friend WithEvents lblRespuestaVarianza As Label
     Friend WithEvents lblRespuestaDesvTipica As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents grdEstadistica As DataGridView
+    Friend WithEvents lbltotalf1 As Label
+    Friend WithEvents lblTotalx1xf1 As Label
+    Friend WithEvents lblTotalx2xf1 As Label
+    Friend WithEvents x1 As DataGridViewTextBoxColumn
+    Friend WithEvents f1 As DataGridViewTextBoxColumn
+    Friend WithEvents n1 As DataGridViewTextBoxColumn
+    Friend WithEvents x1xf1 As DataGridViewTextBoxColumn
+    Friend WithEvents x2xf1 As DataGridViewTextBoxColumn
 End Class
