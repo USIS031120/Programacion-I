@@ -22,213 +22,123 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.txtserie = New System.Windows.Forms.TextBox()
-        Me.lblNumero = New System.Windows.Forms.Label()
-        Me.btnMediaAritmetica = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblRespuestaMedia = New System.Windows.Forms.Label()
-        Me.lblRespuestaVarianza = New System.Windows.Forms.Label()
-        Me.lblRespuestaDesvTipica = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.grdEstadistica = New System.Windows.Forms.DataGridView()
-        Me.lbltotalf1 = New System.Windows.Forms.Label()
-        Me.lblTotalx1xf1 = New System.Windows.Forms.Label()
-        Me.lblTotalx2xf1 = New System.Windows.Forms.Label()
-        Me.x1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.f1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.n1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.x1xf1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.x2xf1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.grdEstadistica, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.lblcapital = New System.Windows.Forms.Label()
+        Me.txtcapital = New System.Windows.Forms.TextBox()
+        Me.btncalcular = New System.Windows.Forms.Button()
+        Me.txtinteres = New System.Windows.Forms.TextBox()
+        Me.lnlinteres = New System.Windows.Forms.Label()
+        Me.txttiempo = New System.Windows.Forms.TextBox()
+        Me.lnltiempo = New System.Windows.Forms.Label()
+        Me.lblinteresSimple = New System.Windows.Forms.Label()
+        Me.lblinteresCompuesto = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'txtserie
+        'lblcapital
         '
-        Me.txtserie.Location = New System.Drawing.Point(75, 43)
-        Me.txtserie.Name = "txtserie"
-        Me.txtserie.Size = New System.Drawing.Size(187, 20)
-        Me.txtserie.TabIndex = 2
-        Me.txtserie.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.lblcapital.AutoSize = True
+        Me.lblcapital.Location = New System.Drawing.Point(20, 40)
+        Me.lblcapital.Name = "lblcapital"
+        Me.lblcapital.Size = New System.Drawing.Size(42, 13)
+        Me.lblcapital.TabIndex = 0
+        Me.lblcapital.Text = "Capital:"
         '
-        'lblNumero
+        'txtcapital
         '
-        Me.lblNumero.AutoSize = True
-        Me.lblNumero.Location = New System.Drawing.Point(28, 49)
-        Me.lblNumero.Name = "lblNumero"
-        Me.lblNumero.Size = New System.Drawing.Size(34, 13)
-        Me.lblNumero.TabIndex = 5
-        Me.lblNumero.Text = "Serie:"
+        Me.txtcapital.Location = New System.Drawing.Point(68, 40)
+        Me.txtcapital.Name = "txtcapital"
+        Me.txtcapital.Size = New System.Drawing.Size(66, 20)
+        Me.txtcapital.TabIndex = 1
         '
-        'btnMediaAritmetica
+        'btncalcular
         '
-        Me.btnMediaAritmetica.Location = New System.Drawing.Point(75, 176)
-        Me.btnMediaAritmetica.Name = "btnMediaAritmetica"
-        Me.btnMediaAritmetica.Size = New System.Drawing.Size(187, 48)
-        Me.btnMediaAritmetica.TabIndex = 6
-        Me.btnMediaAritmetica.Text = "Calculos estadisticos"
-        Me.btnMediaAritmetica.UseVisualStyleBackColor = True
+        Me.btncalcular.Location = New System.Drawing.Point(142, 141)
+        Me.btncalcular.Name = "btncalcular"
+        Me.btncalcular.Size = New System.Drawing.Size(129, 48)
+        Me.btncalcular.TabIndex = 2
+        Me.btncalcular.Text = "Calcular"
+        Me.btncalcular.UseVisualStyleBackColor = True
         '
-        'Label1
+        'txtinteres
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(72, 80)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 13)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Media artimetica:"
+        Me.txtinteres.Location = New System.Drawing.Point(211, 40)
+        Me.txtinteres.Name = "txtinteres"
+        Me.txtinteres.Size = New System.Drawing.Size(60, 20)
+        Me.txtinteres.TabIndex = 4
         '
-        'Label2
+        'lnlinteres
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(72, 111)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 13)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Varianza:"
+        Me.lnlinteres.AutoSize = True
+        Me.lnlinteres.Location = New System.Drawing.Point(152, 43)
+        Me.lnlinteres.Name = "lnlinteres"
+        Me.lnlinteres.Size = New System.Drawing.Size(53, 13)
+        Me.lnlinteres.TabIndex = 3
+        Me.lnlinteres.Text = "Intereses:"
         '
-        'lblRespuestaMedia
+        'txttiempo
         '
-        Me.lblRespuestaMedia.AutoSize = True
-        Me.lblRespuestaMedia.Location = New System.Drawing.Point(165, 80)
-        Me.lblRespuestaMedia.Name = "lblRespuestaMedia"
-        Me.lblRespuestaMedia.Size = New System.Drawing.Size(13, 13)
-        Me.lblRespuestaMedia.TabIndex = 10
-        Me.lblRespuestaMedia.Text = "?"
+        Me.txttiempo.Location = New System.Drawing.Point(378, 37)
+        Me.txttiempo.Name = "txttiempo"
+        Me.txttiempo.Size = New System.Drawing.Size(53, 20)
+        Me.txttiempo.TabIndex = 6
         '
-        'lblRespuestaVarianza
+        'lnltiempo
         '
-        Me.lblRespuestaVarianza.AutoSize = True
-        Me.lblRespuestaVarianza.Location = New System.Drawing.Point(165, 111)
-        Me.lblRespuestaVarianza.Name = "lblRespuestaVarianza"
-        Me.lblRespuestaVarianza.Size = New System.Drawing.Size(13, 13)
-        Me.lblRespuestaVarianza.TabIndex = 11
-        Me.lblRespuestaVarianza.Text = "?"
+        Me.lnltiempo.AutoSize = True
+        Me.lnltiempo.Location = New System.Drawing.Point(288, 43)
+        Me.lnltiempo.Name = "lnltiempo"
+        Me.lnltiempo.Size = New System.Drawing.Size(77, 13)
+        Me.lnltiempo.TabIndex = 5
+        Me.lnltiempo.Text = "Tiempo (años):"
         '
-        'lblRespuestaDesvTipica
+        'lblinteresSimple
         '
-        Me.lblRespuestaDesvTipica.AutoSize = True
-        Me.lblRespuestaDesvTipica.Location = New System.Drawing.Point(165, 141)
-        Me.lblRespuestaDesvTipica.Name = "lblRespuestaDesvTipica"
-        Me.lblRespuestaDesvTipica.Size = New System.Drawing.Size(13, 13)
-        Me.lblRespuestaDesvTipica.TabIndex = 13
-        Me.lblRespuestaDesvTipica.Text = "?"
+        Me.lblinteresSimple.AutoSize = True
+        Me.lblinteresSimple.Location = New System.Drawing.Point(60, 101)
+        Me.lblinteresSimple.Name = "lblinteresSimple"
+        Me.lblinteresSimple.Size = New System.Drawing.Size(74, 13)
+        Me.lblinteresSimple.TabIndex = 7
+        Me.lblinteresSimple.Text = "Interes simple:"
         '
-        'Label4
+        'lblinteresCompuesto
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(72, 141)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(70, 13)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Desv. Tipica:"
-        '
-        'grdEstadistica
-        '
-        Me.grdEstadistica.AllowUserToDeleteRows = False
-        Me.grdEstadistica.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grdEstadistica.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.x1, Me.f1, Me.n1, Me.x1xf1, Me.x2xf1})
-        Me.grdEstadistica.Location = New System.Drawing.Point(305, 28)
-        Me.grdEstadistica.Name = "grdEstadistica"
-        Me.grdEstadistica.Size = New System.Drawing.Size(423, 345)
-        Me.grdEstadistica.TabIndex = 14
-        '
-        'lbltotalf1
-        '
-        Me.lbltotalf1.AutoSize = True
-        Me.lbltotalf1.Location = New System.Drawing.Point(401, 376)
-        Me.lbltotalf1.Name = "lbltotalf1"
-        Me.lbltotalf1.Size = New System.Drawing.Size(22, 13)
-        Me.lbltotalf1.TabIndex = 15
-        Me.lbltotalf1.Text = "0.0"
-        '
-        'lblTotalx1xf1
-        '
-        Me.lblTotalx1xf1.AutoSize = True
-        Me.lblTotalx1xf1.Location = New System.Drawing.Point(537, 376)
-        Me.lblTotalx1xf1.Name = "lblTotalx1xf1"
-        Me.lblTotalx1xf1.Size = New System.Drawing.Size(22, 13)
-        Me.lblTotalx1xf1.TabIndex = 16
-        Me.lblTotalx1xf1.Text = "0.0"
-        '
-        'lblTotalx2xf1
-        '
-        Me.lblTotalx2xf1.AutoSize = True
-        Me.lblTotalx2xf1.Location = New System.Drawing.Point(658, 376)
-        Me.lblTotalx2xf1.Name = "lblTotalx2xf1"
-        Me.lblTotalx2xf1.Size = New System.Drawing.Size(22, 13)
-        Me.lblTotalx2xf1.TabIndex = 17
-        Me.lblTotalx2xf1.Text = "0.0"
-        '
-        'x1
-        '
-        Me.x1.HeaderText = "X1"
-        Me.x1.Name = "x1"
-        '
-        'f1
-        '
-        Me.f1.HeaderText = "F1"
-        Me.f1.Name = "f1"
-        '
-        'n1
-        '
-        Me.n1.HeaderText = "N1"
-        Me.n1.Name = "n1"
-        '
-        'x1xf1
-        '
-        Me.x1xf1.HeaderText = "X1 x F1"
-        Me.x1xf1.Name = "x1xf1"
-        '
-        'x2xf1
-        '
-        Me.x2xf1.HeaderText = "X2 x F1"
-        Me.x2xf1.Name = "x2xf1"
+        Me.lblinteresCompuesto.AutoSize = True
+        Me.lblinteresCompuesto.Location = New System.Drawing.Point(288, 101)
+        Me.lblinteresCompuesto.Name = "lblinteresCompuesto"
+        Me.lblinteresCompuesto.Size = New System.Drawing.Size(97, 13)
+        Me.lblinteresCompuesto.TabIndex = 8
+        Me.lblinteresCompuesto.Text = "Interes compuesto:"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(761, 400)
-        Me.Controls.Add(Me.lblTotalx2xf1)
-        Me.Controls.Add(Me.lblTotalx1xf1)
-        Me.Controls.Add(Me.lbltotalf1)
-        Me.Controls.Add(Me.grdEstadistica)
-        Me.Controls.Add(Me.lblRespuestaDesvTipica)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.lblRespuestaVarianza)
-        Me.Controls.Add(Me.lblRespuestaMedia)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnMediaAritmetica)
-        Me.Controls.Add(Me.lblNumero)
-        Me.Controls.Add(Me.txtserie)
+        Me.ClientSize = New System.Drawing.Size(454, 201)
+        Me.Controls.Add(Me.lblinteresCompuesto)
+        Me.Controls.Add(Me.lblinteresSimple)
+        Me.Controls.Add(Me.txttiempo)
+        Me.Controls.Add(Me.lnltiempo)
+        Me.Controls.Add(Me.txtinteres)
+        Me.Controls.Add(Me.lnlinteres)
+        Me.Controls.Add(Me.btncalcular)
+        Me.Controls.Add(Me.txtcapital)
+        Me.Controls.Add(Me.lblcapital)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.Text = "Calculadora Basica"
-        CType(Me.grdEstadistica, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txtserie As TextBox
-    Friend WithEvents lblNumero As Label
-    Friend WithEvents btnMediaAritmetica As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents lblRespuestaMedia As Label
-    Friend WithEvents lblRespuestaVarianza As Label
-    Friend WithEvents lblRespuestaDesvTipica As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents grdEstadistica As DataGridView
-    Friend WithEvents lbltotalf1 As Label
-    Friend WithEvents lblTotalx1xf1 As Label
-    Friend WithEvents lblTotalx2xf1 As Label
-    Friend WithEvents x1 As DataGridViewTextBoxColumn
-    Friend WithEvents f1 As DataGridViewTextBoxColumn
-    Friend WithEvents n1 As DataGridViewTextBoxColumn
-    Friend WithEvents x1xf1 As DataGridViewTextBoxColumn
-    Friend WithEvents x2xf1 As DataGridViewTextBoxColumn
+
+    Friend WithEvents lblcapital As Label
+    Friend WithEvents txtcapital As TextBox
+    Friend WithEvents btncalcular As Button
+    Friend WithEvents txtinteres As TextBox
+    Friend WithEvents lnlinteres As Label
+    Friend WithEvents txttiempo As TextBox
+    Friend WithEvents lnltiempo As Label
+    Friend WithEvents lblinteresSimple As Label
+    Friend WithEvents lblinteresCompuesto As Label
 End Class

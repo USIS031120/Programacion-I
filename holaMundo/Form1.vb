@@ -1,48 +1,60 @@
 ﻿Public Class Form1
-    Dim objEstadistica As New estadisticas
-    Private Sub btnMediaAritmetica_Click(sender As Object, e As EventArgs) Handles btnMediaAritmetica.Click
-        lblRespuestaMedia.Text = objEstadistica.calcularMedia(txtserie.Text.Split(","))
-        lblRespuestaVarianza.Text = objEstadistica.calcularVarianza(txtserie.Text.Split(","))
-        lblRespuestaDesvTipica.Text = objEstadistica.calcularDesvTipica(txtserie.Text.Split(","))
+    Dim objInteres As New interes()
+    Private Sub btncalcular_Click(sender As Object, e As EventArgs) Handles btncalcular.Click
+        objInteres.inter = txtinteres.Text
+        objInteres.tiempo = txttiempo.Text
+        objInteres.monto = txtcapital.Text
+        lblinteresSimple.Text = "Interes simple: $" + objInteres.interesSimple().ToString()
+        lblinteresCompuesto.Text = "Interes compuesto: $" + objInteres.interesCompuesto().ToString()
     End Sub
+End Class
 
-    Private Sub grdEstadistica_KeyUp(sender As Object, e As KeyEventArgs) Handles grdEstadistica.KeyUp
-        Try
-            Dim nFilas = grdEstadistica.Rows.Count - 1,
-                totalf1 = 0,
-                totalx1xf1 = 0.0,
-                totalx2xf1 = 0.0
-            Dim fila As New DataGridViewRow
-            For i = 0 To nFilas
-                fila = grdEstadistica.Rows(i)
-                Dim x1 = 0, f1 = 0
-                If fila.Cells("x1").Value <> "" Then
-                    x1 = Integer.Parse(fila.Cells("x1").Value.ToString())
-                End If
-                If fila.Cells("f1").Value <> "" Then
-                    f1 = Integer.Parse(fila.Cells("f1").Value.ToString())
-                End If
-                totalf1 += f1
-                totalx1xf1 += x1 * f1
-                totalx2xf1 += x1 ^ 2 * f1
+Class interes
+    Dim _interes As Double, _ntiempo As Int16, _capital As Double
+    Public Property inter
+        Set(value)
+            If value >= 0 And value <= 100 Then
+                _interes = value
+            Else
+                MessageBox.Show("El valor del interes no es valido", "Intereses", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End Set
+        Get
+            Return _interes
+        End Get
+    End Property
+    Public Property tiempo
+        Set(value)
+            If value >= 1 And value <= 120 Then
+                _ntiempo = value
+            Else
+                MessageBox.Show("tiempo no es valido", "Intereses", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End Set
 
-                fila.Cells("n1").Value = totalf1.ToString()
-                fila.Cells("x1xf1").Value = (x1 * f1).ToString()
-                fila.Cells("x2xf1").Value = (x1 ^ 2 * f1).ToString()
-            Next
-            lbltotalf1.Text = totalf1.ToString()
-            lblTotalx1xf1.Text = totalx1xf1.ToString()
-            lblTotalx2xf1.Text = totalx2xf1.ToString()
+        Get
+            Return _ntiempo
+        End Get
+    End Property
+    Public Property monto
+        Set(value)
+            If value > 0 Then
+                _capital = value
+            Else
+                MessageBox.Show("El capital debe ser mayor a 0", "Intereses", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End Set
+        Get
+            Return _capital
+        End Get
+    End Property
 
-
-            Dim media = Math.Round(totalx1xf1 / totalf1, 2),
-                varianza = Math.Round(totalx2xf1 / totalf1 - media ^ 2, 2)
-            lblRespuestaMedia.Text = media.ToString()
-            lblRespuestaVarianza.Text = varianza.ToString()
-        Catch ex As Exception
-            'Manejador...
-            MessageBox.Show("ERorr")
-        End Try
-
-    End Sub
+    Public Function interesSimple()
+        Dim ins = _capital * (_interes / 100) * (_ntiempo / 12)
+        Return Math.Round(ins, 2)
+    End Function
+    Public Function interesCompuesto()
+        Dim inC = _capital * (1 + _interes / 100) ^ _ntiempo
+        Return Math.Round(inC, 2)
+    End Function
 End Class
