@@ -1,25 +1,24 @@
 ﻿Public Class Form1
-    Dim objromano = New conversor_romanos
+    Dim objdirecciones = New direcciones
 
-    Private Sub btncalcular_Click(sender As Object, e As EventArgs) Handles btncalcular.Click
-        lblRespuestaRomano.Text = objromano.convertir(txtnumero.Text)
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cboDepto.Items.AddRange(objdirecciones.depto)
+    End Sub
+
+    Private Sub cboDepto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboDepto.SelectedIndexChanged
+        cboMun.Items.Clear()
+        cboMun.Text = ""
+        cboMun.Items.AddRange(objdirecciones.mun(cboDepto.SelectedIndex))
     End Sub
 End Class
 
-Class conversor_romanos
-    Dim romanos()() As String = {
-        New String() {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"},
-        New String() {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"},
-        New String() {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"}
+Class direcciones
+    Public depto() As String = {"Seleccione un depto.", "Usulutan", "San Miguel", "La Union", "Morazan"}
+    Public mun()() As String = {
+        New String() {"Seleccione un depto."},
+        New String() {"Seleccione un municipio", "Usulutan", "Jiquilisco", "Santa Elena", "Santa Maria"},
+        New String() {"Seleccione un municipio", "San Miguel", "El Transito", "San Rafael Ote", "San Jorge"},
+        New String() {"Seleccione un municipio", "La Union", "SLR", "Anamoros", "Bolivar"},
+        New String() {"Seleccione un municipio", "Arambula", "Perquin", "Corinto", "Cacaopera"}
         }
-
-    Dim u, d, c, numero As Integer
-
-    Public Function convertir(ByVal num As Integer)
-        u = num Mod 10
-        c = num \ 100
-        numero = num Mod 100
-        d = num \ 10
-        Return romanos(2)(c) + romanos(1)(d) + romanos(0)(u)
-    End Function
 End Class
