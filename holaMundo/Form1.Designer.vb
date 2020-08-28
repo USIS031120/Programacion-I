@@ -23,14 +23,9 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblcapital = New System.Windows.Forms.Label()
-        Me.txtcapital = New System.Windows.Forms.TextBox()
+        Me.txtnumero = New System.Windows.Forms.TextBox()
         Me.btncalcular = New System.Windows.Forms.Button()
-        Me.txtinteres = New System.Windows.Forms.TextBox()
-        Me.lnlinteres = New System.Windows.Forms.Label()
-        Me.txttiempo = New System.Windows.Forms.TextBox()
-        Me.lnltiempo = New System.Windows.Forms.Label()
-        Me.lblinteresSimple = New System.Windows.Forms.Label()
-        Me.lblinteresCompuesto = New System.Windows.Forms.Label()
+        Me.lblRespuestaRomano = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblcapital
@@ -42,103 +37,52 @@ Partial Class Form1
         Me.lblcapital.TabIndex = 0
         Me.lblcapital.Text = "Capital:"
         '
-        'txtcapital
+        'txtnumero
         '
-        Me.txtcapital.Location = New System.Drawing.Point(68, 40)
-        Me.txtcapital.Name = "txtcapital"
-        Me.txtcapital.Size = New System.Drawing.Size(66, 20)
-        Me.txtcapital.TabIndex = 1
+        Me.txtnumero.Location = New System.Drawing.Point(68, 40)
+        Me.txtnumero.Name = "txtnumero"
+        Me.txtnumero.Size = New System.Drawing.Size(166, 20)
+        Me.txtnumero.TabIndex = 1
         '
         'btncalcular
         '
-        Me.btncalcular.Location = New System.Drawing.Point(142, 141)
+        Me.btncalcular.Location = New System.Drawing.Point(68, 92)
         Me.btncalcular.Name = "btncalcular"
         Me.btncalcular.Size = New System.Drawing.Size(129, 48)
         Me.btncalcular.TabIndex = 2
         Me.btncalcular.Text = "Calcular"
         Me.btncalcular.UseVisualStyleBackColor = True
         '
-        'txtinteres
+        'lblRespuestaRomano
         '
-        Me.txtinteres.Location = New System.Drawing.Point(211, 40)
-        Me.txtinteres.Name = "txtinteres"
-        Me.txtinteres.Size = New System.Drawing.Size(60, 20)
-        Me.txtinteres.TabIndex = 4
-        '
-        'lnlinteres
-        '
-        Me.lnlinteres.AutoSize = True
-        Me.lnlinteres.Location = New System.Drawing.Point(152, 43)
-        Me.lnlinteres.Name = "lnlinteres"
-        Me.lnlinteres.Size = New System.Drawing.Size(53, 13)
-        Me.lnlinteres.TabIndex = 3
-        Me.lnlinteres.Text = "Intereses:"
-        '
-        'txttiempo
-        '
-        Me.txttiempo.Location = New System.Drawing.Point(378, 37)
-        Me.txttiempo.Name = "txttiempo"
-        Me.txttiempo.Size = New System.Drawing.Size(53, 20)
-        Me.txttiempo.TabIndex = 6
-        '
-        'lnltiempo
-        '
-        Me.lnltiempo.AutoSize = True
-        Me.lnltiempo.Location = New System.Drawing.Point(288, 43)
-        Me.lnltiempo.Name = "lnltiempo"
-        Me.lnltiempo.Size = New System.Drawing.Size(77, 13)
-        Me.lnltiempo.TabIndex = 5
-        Me.lnltiempo.Text = "Tiempo (años):"
-        '
-        'lblinteresSimple
-        '
-        Me.lblinteresSimple.AutoSize = True
-        Me.lblinteresSimple.Location = New System.Drawing.Point(60, 101)
-        Me.lblinteresSimple.Name = "lblinteresSimple"
-        Me.lblinteresSimple.Size = New System.Drawing.Size(74, 13)
-        Me.lblinteresSimple.TabIndex = 7
-        Me.lblinteresSimple.Text = "Interes simple:"
-        '
-        'lblinteresCompuesto
-        '
-        Me.lblinteresCompuesto.AutoSize = True
-        Me.lblinteresCompuesto.Location = New System.Drawing.Point(288, 101)
-        Me.lblinteresCompuesto.Name = "lblinteresCompuesto"
-        Me.lblinteresCompuesto.Size = New System.Drawing.Size(97, 13)
-        Me.lblinteresCompuesto.TabIndex = 8
-        Me.lblinteresCompuesto.Text = "Interes compuesto:"
+        Me.lblRespuestaRomano.AutoSize = True
+        Me.lblRespuestaRomano.Location = New System.Drawing.Point(240, 43)
+        Me.lblRespuestaRomano.Name = "lblRespuestaRomano"
+        Me.lblRespuestaRomano.Size = New System.Drawing.Size(96, 13)
+        Me.lblRespuestaRomano.TabIndex = 3
+        Me.lblRespuestaRomano.Text = "Respuesta romano"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(454, 201)
-        Me.Controls.Add(Me.lblinteresCompuesto)
-        Me.Controls.Add(Me.lblinteresSimple)
-        Me.Controls.Add(Me.txttiempo)
-        Me.Controls.Add(Me.lnltiempo)
-        Me.Controls.Add(Me.txtinteres)
-        Me.Controls.Add(Me.lnlinteres)
+        Me.Controls.Add(Me.lblRespuestaRomano)
         Me.Controls.Add(Me.btncalcular)
-        Me.Controls.Add(Me.txtcapital)
+        Me.Controls.Add(Me.txtnumero)
         Me.Controls.Add(Me.lblcapital)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Calculadora Basica"
+        Me.Text = "Conversor de numeros decimales a Romanos"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents lblcapital As Label
-    Friend WithEvents txtcapital As TextBox
+    Friend WithEvents txtnumero As TextBox
     Friend WithEvents btncalcular As Button
-    Friend WithEvents txtinteres As TextBox
-    Friend WithEvents lnlinteres As Label
-    Friend WithEvents txttiempo As TextBox
-    Friend WithEvents lnltiempo As Label
-    Friend WithEvents lblinteresSimple As Label
-    Friend WithEvents lblinteresCompuesto As Label
+    Friend WithEvents lblRespuestaRomano As Label
 End Class
