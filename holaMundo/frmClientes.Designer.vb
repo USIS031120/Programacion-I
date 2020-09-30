@@ -82,9 +82,9 @@ Partial Class frmClientes
         Me.lblEmailCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEmailCliente.Location = New System.Drawing.Point(6, 399)
         Me.lblEmailCliente.Name = "lblEmailCliente"
-        Me.lblEmailCliente.Size = New System.Drawing.Size(100, 16)
+        Me.lblEmailCliente.Size = New System.Drawing.Size(56, 16)
         Me.lblEmailCliente.TabIndex = 8
-        Me.lblEmailCliente.Text = "TELEFONO:"
+        Me.lblEmailCliente.Text = "EMAIL:"
         '
         'txtTelefonoCliente
         '
@@ -99,7 +99,7 @@ Partial Class frmClientes
         Me.lblTelefonoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTelefonoCliente.Location = New System.Drawing.Point(-3, 326)
         Me.lblTelefonoCliente.Name = "lblTelefonoCliente"
-        Me.lblTelefonoCliente.Size = New System.Drawing.Size(100, 16)
+        Me.lblTelefonoCliente.Size = New System.Drawing.Size(92, 16)
         Me.lblTelefonoCliente.TabIndex = 6
         Me.lblTelefonoCliente.Text = "TELEFONO:"
         '
@@ -117,7 +117,7 @@ Partial Class frmClientes
         Me.lblDireccionCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDireccionCliente.Location = New System.Drawing.Point(6, 172)
         Me.lblDireccionCliente.Name = "lblDireccionCliente"
-        Me.lblDireccionCliente.Size = New System.Drawing.Size(106, 16)
+        Me.lblDireccionCliente.Size = New System.Drawing.Size(95, 16)
         Me.lblDireccionCliente.TabIndex = 4
         Me.lblDireccionCliente.Text = "DIRRECION:"
         '
@@ -134,7 +134,7 @@ Partial Class frmClientes
         Me.lblNombreCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNombreCliente.Location = New System.Drawing.Point(6, 64)
         Me.lblNombreCliente.Name = "lblNombreCliente"
-        Me.lblNombreCliente.Size = New System.Drawing.Size(84, 16)
+        Me.lblNombreCliente.Size = New System.Drawing.Size(77, 16)
         Me.lblNombreCliente.TabIndex = 2
         Me.lblNombreCliente.Text = "NOMBRE:"
         '
@@ -151,7 +151,7 @@ Partial Class frmClientes
         Me.lblCodigoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCodigoCliente.Location = New System.Drawing.Point(6, 29)
         Me.lblCodigoCliente.Name = "lblCodigoCliente"
-        Me.lblCodigoCliente.Size = New System.Drawing.Size(78, 16)
+        Me.lblCodigoCliente.Size = New System.Drawing.Size(70, 16)
         Me.lblCodigoCliente.TabIndex = 0
         Me.lblCodigoCliente.Text = "CODIGO:"
         '
