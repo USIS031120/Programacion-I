@@ -79,3 +79,4 @@ C:\Users\mago\Desktop\Progrmacion-I\holaMundo\obj\Debug\holaMundo.exe
 C:\Users\mago\Desktop\Progrmacion-I\holaMundo\obj\Debug\holaMundo.xml
 C:\Users\mago\Desktop\Progrmacion-I\holaMundo\obj\Debug\holaMundo.pdb
 C:\Users\mago\Desktop\Progrmacion-I\holaMundo\obj\Debug\holaMundo.frmBuscarClientes.resources
+C:\Users\mago\Desktop\Programacion-I\holaMundo\obj\Debug\holaMundo.frmBuscarClientes.resources
