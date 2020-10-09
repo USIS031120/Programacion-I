@@ -125,8 +125,7 @@
         Dim objBuscarCliente As New frmBuscarClientes
         objBuscarCliente.ShowDialog()
         If objBuscarCliente._idC > 0 Then
-            posicion = dataTable.Rows.IndexOf(dataTable.Rows.Find(objBuscarCliente._idC))
-            mostrarDatos()
+
         End If
     End Sub
 End Class

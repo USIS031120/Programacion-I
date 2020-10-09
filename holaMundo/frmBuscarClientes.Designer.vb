@@ -42,7 +42,7 @@ Partial Class frmBuscarClientes
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBuscarCliente.Location = New System.Drawing.Point(91, 30)
         Me.txtBuscarCliente.Name = "txtBuscarCliente"
-        Me.txtBuscarCliente.Size = New System.Drawing.Size(679, 20)
+        Me.txtBuscarCliente.Size = New System.Drawing.Size(690, 20)
         Me.txtBuscarCliente.TabIndex = 0
         '
         'Label1
@@ -66,7 +66,7 @@ Partial Class frmBuscarClientes
         Me.grdBuscarCliente.Location = New System.Drawing.Point(32, 74)
         Me.grdBuscarCliente.Name = "grdBuscarCliente"
         Me.grdBuscarCliente.ReadOnly = True
-        Me.grdBuscarCliente.Size = New System.Drawing.Size(744, 372)
+        Me.grdBuscarCliente.Size = New System.Drawing.Size(755, 372)
         Me.grdBuscarCliente.TabIndex = 2
         '
         'idCliente
@@ -120,7 +120,7 @@ Partial Class frmBuscarClientes
         '
         Me.btnSeleccionarCliente.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnSeleccionarCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeleccionarCliente.Location = New System.Drawing.Point(398, 452)
+        Me.btnSeleccionarCliente.Location = New System.Drawing.Point(441, 452)
         Me.btnSeleccionarCliente.Name = "btnSeleccionarCliente"
         Me.btnSeleccionarCliente.Size = New System.Drawing.Size(200, 35)
         Me.btnSeleccionarCliente.TabIndex = 3
@@ -131,7 +131,7 @@ Partial Class frmBuscarClientes
         '
         Me.btnCancelarCliente.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnCancelarCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelarCliente.Location = New System.Drawing.Point(630, 452)
+        Me.btnCancelarCliente.Location = New System.Drawing.Point(647, 452)
         Me.btnCancelarCliente.Name = "btnCancelarCliente"
         Me.btnCancelarCliente.Size = New System.Drawing.Size(140, 35)
         Me.btnCancelarCliente.TabIndex = 4
@@ -142,7 +142,7 @@ Partial Class frmBuscarClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(801, 489)
+        Me.ClientSize = New System.Drawing.Size(812, 489)
         Me.Controls.Add(Me.btnCancelarCliente)
         Me.Controls.Add(Me.btnSeleccionarCliente)
         Me.Controls.Add(Me.grdBuscarCliente)
